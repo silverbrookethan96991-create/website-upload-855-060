@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索-高清剧集片库-全集高清在线播放</title>
+  <meta name="description" content="搜索高清剧集片库，快速找到热播剧集、精选影片与相关标签内容。">
+  <meta name="keywords" content="高清剧集片库,热播剧集大全,高清剧集,全集高清,电视剧片库,在线播放,搜索,剧集搜索">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+</head>
+<body>
+  <header class="site-header">
+  <nav class="top-nav" aria-label="主导航">
+    <a class="brand" href="./index.html" aria-label="高清剧集大全">
+      <span class="brand-mark">剧</span>
+      <span class="brand-text">高清剧集大全</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="展开导航" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div class="nav-links" data-nav-menu>
+      <a class="nav-link" href="./index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="./categories.html">分类</a>
+        <div class="dropdown-panel">
+          <a href="./category-hot-series.html">热播剧集</a><a href="./category-premium-drama.html">精选片库</a><a href="./category-romance-theater.html">爱情剧场</a><a href="./category-suspense-thriller.html">悬疑惊悚</a><a href="./category-costume-history.html">古装历史</a><a href="./category-urban-workplace.html">都市职场</a><a href="./category-comedy-light.html">喜剧轻松</a><a href="./category-scifi-fantasy.html">科幻奇想</a>
+        </div>
+      </div>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link is-active" href="./search.html">搜索</a>
+      <form class="nav-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索剧集、地区、标签" aria-label="搜索">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </nav>
+</header>
+  <main>
+    <section class="page-hero small-hero search-hero">
+      <div>
+        <span>全站搜索</span>
+        <h1>搜索高清剧集片库</h1>
+        <p>可按片名、简介、地区、年份、类型和标签检索。</p>
+      </div>
+    </section>
+    <section class="section-wrap search-page" data-search-page>
+      <form class="wide-search search-main" action="./search.html" method="get" data-search-form>
+        <input type="search" name="q" placeholder="输入片名、地区、标签" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+      <div class="section-title compact-title"><div><span>搜索结果</span><h2 data-search-title>精选内容</h2></div></div>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand"><span class="brand-mark">剧</span><span>高清剧集大全</span></div>
+      <p>高清剧集片库收录多类型电视剧内容，覆盖热播剧集与精选栏目。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <ul><li><a href="./category-hot-series.html">热播剧集</a></li><li><a href="./category-premium-drama.html">精选片库</a></li><li><a href="./category-romance-theater.html">爱情剧场</a></li><li><a href="./category-suspense-thriller.html">悬疑惊悚</a></li><li><a href="./category-costume-history.html">古装历史</a></li><li><a href="./category-urban-workplace.html">都市职场</a></li></ul>
+    </div>
+    <div>
+      <h2>精选栏目</h2>
+      <ul>
+        <li><a href="./categories.html">分类总览</a></li>
+        <li><a href="./ranking.html">热播排行</a></li>
+        <li><a href="./search.html">全站搜索</a></li>
+      </ul>
+    </div>
+    <div>
+      <h2>内容关键词</h2>
+      <p>热播剧集、全集高清、都市情感、悬疑惊悚、爱情剧场、在线播放。</p>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 高清剧集大全</div>
+</footer>
+  <script src="./assets/site.js"></script>
+  <script src="./assets/search-index.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

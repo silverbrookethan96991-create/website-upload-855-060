@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>搜索 - 高清剧集大全</title>
+  <meta name="description" content="搜索热门电视剧、剧集题材、地区、年份与高清在线播放内容。">
+  <meta name="keywords" content="热门电视剧,电视剧大全,热播剧集,全集播放,高清电视剧,剧集排行,精选电视剧,搜索,剧集搜索">
+  <meta name="robots" content="index,follow">
+  <meta name="renderer" content="webkit">
+  <meta property="og:title" content="搜索 - 高清剧集大全">
+  <meta property="og:description" content="搜索热门电视剧、剧集题材、地区、年份与高清在线播放内容。">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="./index.html" aria-label="高清剧集大全">
+      <span class="brand-mark">🎬</span>
+      <span class="brand-text">高清剧集大全</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <div class="nav-drop">
+        <a class="nav-link" href="./categories.html">分类</a>
+        <div class="drop-panel">
+            <a href="./category/hot-dramas.html">热播精选</a>
+            <a href="./category/costume.html">古装权谋</a>
+            <a href="./category/suspense.html">悬疑探案</a>
+            <a href="./category/romance.html">甜宠爱情</a>
+            <a href="./category/urban.html">都市情感</a>
+            <a href="./category/family.html">家庭治愈</a>
+            <a href="./category/comedy.html">轻喜短剧</a>
+            <a href="./category/youth.html">青春校园</a>
+        </div>
+      </div>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link is-active" href="./search.html">搜索</a>
+    </nav>
+    <form class="nav-search" action="./search.html" method="get" data-site-search>
+      <input type="search" name="q" placeholder="搜索剧集、地区、题材" aria-label="搜索剧集">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-button" type="button" aria-label="打开菜单" data-menu-button>☰</button>
+  </div>
+  <div class="mobile-panel" data-mobile-panel>
+    <form class="mobile-search" action="./search.html" method="get" data-site-search>
+      <input type="search" name="q" placeholder="搜索剧集">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="mobile-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类总览</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html">搜索</a>
+      <div class="mobile-cat-list">
+          <a href="./category/hot-dramas.html">热播精选</a>
+          <a href="./category/costume.html">古装权谋</a>
+          <a href="./category/suspense.html">悬疑探案</a>
+          <a href="./category/romance.html">甜宠爱情</a>
+          <a href="./category/urban.html">都市情感</a>
+          <a href="./category/family.html">家庭治愈</a>
+          <a href="./category/comedy.html">轻喜短剧</a>
+          <a href="./category/youth.html">青春校园</a>
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>搜索剧集</h1>
+      <p>输入片名、地区、年份、类型或标签，快速进入对应剧集详情页。</p>
+      <form class="search-box" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索剧集、地区、题材" data-search-input>
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <div class="main-wrap">
+    <section class="section">
+      <h2 class="search-results-title" data-search-heading>热门搜索</h2>
+      <p class="search-results-title hidden" data-empty-state>没有找到匹配的剧集。</p>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </div>
+</main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <strong>高清剧集大全</strong>
+      <p>热门电视剧栏目整理高关注度剧集，包含不同题材与地区内容，适合按热度筛选观看。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">榜单</a>
+      <a href="./search.html">搜索</a>
+      <a href="./category/hot-dramas.html">热播精选</a><a href="./category/costume.html">古装权谋</a><a href="./category/suspense.html">悬疑探案</a><a href="./category/romance.html">甜宠爱情</a><a href="./category/urban.html">都市情感</a><a href="./category/family.html">家庭治愈</a>
+    </div>
+  </div>
+</footer>
+<script src="./assets/search-index.js"></script>
+<script src="./assets/search.js"></script>
+<script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
